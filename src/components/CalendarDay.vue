@@ -3,7 +3,7 @@
     <div class="day-banner has-text-white has-text-centered">{{day.abbvTitle}}</div>
     <div class="day-details">
       <div class="day-number">{{day.id}}</div>
-      <CalendarDayEvent v-for="(event, idx) in day.events" :key="idx" :event="event" />
+      <CalendarDayEvent v-for="(event, idx) in day.events" :key="idx" :event="event" :day="day" />
     </div>
   </div>
 </template>
